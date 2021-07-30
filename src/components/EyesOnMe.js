@@ -1,12 +1,19 @@
-// Code EyesOnMe Component Here
 import React from "react";
 
-function Keypad() {
-  function handleChange() {
-    console.log("Entering password...");
+function EyesOnMe() {
+  function handleFocus() {
+    console.log("Good!");
   }
 
-  return <input type="password" onChange={handleChange} />;
+  function handleBlur() {
+    console.log("Hey! Eyes on me!");
+  }
+
+  return (
+    <button onFocus={handleFocus} onBlur={handleBlur}>
+      Eyes on me
+    </button>
+  );
 }
 
-export default Keypad;
+export default EyesOnMe;
