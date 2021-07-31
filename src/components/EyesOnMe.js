@@ -5,9 +5,7 @@ function EyesOnMe() {
     console.log("Good!");
   }
 
-  function handleBlur() {
-    console.log("Hey! Eyes on me!");
-  }
+  const handleBlur = () => console.log("Hey! Eyes on me!");
 
   return (
     <button onFocus={handleFocus} onBlur={handleBlur}>
